@@ -219,7 +219,86 @@ body {
     font-size: 1.25rem;
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: 2rem;
-    line-height: 1.6;
+    line-height: 1.8;
+}
+
+.problem-solver-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-right: 6px;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.highlight-text {
+    position: relative;
+    font-weight: 600;
+    color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.book-source {
+    display: block;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    margin-top: 0.5rem;
+}
+
+.book-source em {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.hover-name {
+    position: relative;
+    cursor: pointer;
+}
+
+.hover-name::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 8px;
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.hover-name::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 2px;
+    border: 5px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.hover-name:hover::after,
+.hover-name:hover::before {
+    opacity: 1;
 }
 
 .hero-buttons {
@@ -647,7 +726,29 @@ body {
     }
 
     .hero-subtitle {
+        margin-bottom: 1.5rem;
+    }
+
+    .subtitle-intro {
+        font-size: 0.9rem;
+    }
+
+    .approach-step {
+        padding: 0.75rem 1rem;
+    }
+
+    .step-icon {
+        width: 35px;
+        height: 35px;
         font-size: 1rem;
+    }
+
+    .step-label {
+        font-size: 0.85rem;
+    }
+
+    .step-text {
+        font-size: 0.75rem;
     }
 
     .btn {
