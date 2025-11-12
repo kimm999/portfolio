@@ -19,11 +19,16 @@ const About = () => {
             <div className="skills">
               <h3>주요 기술</h3>
               <div className="skill-tags">
-                <span className="skill-tag">HTML/CSS</span>
-                <span className="skill-tag">JavaScript</span>
-                <span className="skill-tag">React</span>
-                <span className="skill-tag">Node.js</span>
-                <span className="skill-tag">Responsive Design</span>
+                <span className="skill-tag">Python</span>
+                <span className="skill-tag">SQL</span>
+                <span className="skill-tag">API</span>
+                <span className="skill-tag">AWS</span>
+                <span className="skill-tag">K8S</span>
+                <span className="skill-tag">Docker</span>
+                <span className="skill-tag">VSCode</span>
+                <span className="skill-tag">Notion</span>
+                <span className="skill-tag">Slack</span>
+                <span className="skill-tag">Excel</span>
               </div>
             </div>
           </div>

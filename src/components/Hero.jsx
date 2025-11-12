@@ -31,7 +31,7 @@ const Hero = () => {
         <p className="hero-subtitle">
           <span
             className="hover-name"
-            data-name="상황 탓은 누구나 하지만, 결정과 행동은 덜 흔한 일이라 저는 그 쪽을 해보려고요. 믿음보단 시도를 택합니다."
+            data-name="상황에 대한 관점을 넘어 행동하는 것이 중요하다 생각합니다."
           >
             유리잔이 반쯤 차 있든, 반쯤 비어 있든 그건 중요하지 않다.<br />
             유리잔은 언제든 다시 채울 수 있다.
